@@ -1,0 +1,28 @@
+FindMe/
+├── app.json
+├── App.js                          ← entry point
+├── src/
+│   ├── config/
+│   │   └── firebase.js             ← Firebase init
+│   ├── context/
+│   │   └── AuthContext.js          ← global auth state
+│   ├── navigation/
+│   │   └── AppNavigator.js         ← screen routing
+│   ├── screens/
+│   │   ├── LoginScreen.js
+│   │   ├── SignupScreen.js
+│   │   ├── HomeScreen.js           ← "Start Hunt" button
+│   │   ├── MatchmakingScreen.js    ← waiting/queue
+│   │   ├── GameScreen.js           ← chat + proximity
+│   │   └── ProfileScreen.js
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── matchService.js         ← matchmaking logic
+│   │   ├── locationService.js      ← GPS + distance calc
+│   │   └── chatService.js
+│   ├── utils/
+│   │   └── proximity.js            ← hot/cold logic
+│   └── components/
+│       ├── ProximityHUD.js         ← the core UI widget
+│       ├── ChatBubble.js
+│       └── SafetyBar.js
